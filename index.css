@@ -1,0 +1,610 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    color: rgb(65, 106, 90);
+    background-color: #00000003;
+    transition: all 0.6s ease;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 1.4vw;
+    margin: 0 0 0 1vw;
+}
+
+h2 {
+    font-size: 1vw;
+}
+
+input {
+    font-size: 0.7vw;
+    width: 2.5vw;
+    height: 1vw;
+    border: none;
+    background-color: #fff;
+    border-radius: 5vw;
+    padding: 0vw 0.3vw;
+    margin-left: 2px;
+}
+
+.chargement {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: affichage 4.2s linear forwards;
+}
+
+.chargement.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.chargement__cercle {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.chargement__cercle:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #7db197 transparent #16482f transparent;
+    animation: cercle-rotation 3s linear infinite;
+}
+
+@keyframes cercle-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes affichage {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    98% {
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-9999px);
+    }
+}
+
+
+.divs_main--ville {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 26%;
+}
+
+select {
+    font-size: 0.7vw;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.3vw 1.5vw;
+    outline: 0;
+    border: solid 0.1rem #264653;
+    border-radius: 100px;
+    background: #ffffff;
+    color: #7b7b7b;
+
+}
+
+.divs_main--ville select::-ms-expand {
+    display: none;
+}
+
+.divs_main--ville select:hover,
+.divs_main--ville select:focus {
+    color: #000000;
+    background: #cccccc;
+}
+
+.divs_main--ville select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+
+header {
+    position: relative;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px;
+    margin: -0.4rem;
+    padding: 0.3vw 2vw;
+}
+
+header.menu img {
+    height: 2vw;
+    max-height: 100%;
+    width: auto;
+}
+
+
+header.menu a {
+    text-decoration: none;
+}
+
+.NnVoe {
+    display: flex;
+    align-items: center;
+}
+
+.eygjmR {
+    display: block;
+    text-align: center;
+    font-size: 0.8vw;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    color: rgb(65, 106, 90);
+}
+
+.kbLKWT {
+    display: block;
+    fill: rgb(65, 106, 90);
+    height: 1vw;
+    margin: 0px 0.75rem;
+}
+
+.kjubOL {
+    font-weight: 600;
+    padding: 0.5vw 1.5vw;
+    background-color: rgb(247, 179, 43);
+    font-family: Work Sans, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 0.8vw;
+    border-radius: 0.625rem;
+    transition: font-weight 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.4rem;
+}
+
+.divs_main {
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.plantes_infos {
+    display: flex;
+    margin-bottom: 2vw;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    width: 34vw;
+    margin-right: 31px;
+}
+
+.galerie .card {
+    width: 9vw;
+    height: 10vw;
+    margin: 0.8vw;
+
+    border-radius: 0.4vw;
+    background-color: #7db197;
+    box-shadow: 0 0 5px 0 #c7c7c752;
+    border: #0000;
+    border-width: 0.4vw;
+    border-style: solid;
+}
+
+.galerie .bas {
+    margin-top: 3vw;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .card__divs-img {
+    height: 74%;
+    width: 100%;
+
+}
+
+.card__cover img {
+    object-fit: cover;
+}
+
+
+.card__cover img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+div.card:nth-child(1)>div:nth-child(1) {
+    background: url('images/Baby-plant.JPG') no-repeat 0vw -3.7vw;
+    background-size: cover;
+}
+
+div.card:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+    top: -1.4vw;
+    left: 1.2vw;
+    width: 6vw;
+}
+
+
+div.card:nth-child(2)>div:nth-child(1) {
+    background: url('images/Plante-tombante.JPG') no-repeat -0.9vw 0vw;
+    background-size: cover;
+    width: 9vw;
+    background-color: white;
+}
+
+div.card:nth-child(2)>div:nth-child(1)>img:nth-child(1) {
+    width: 6.7vw;
+    top: -0.1vw;
+    left: 0vw;
+    opacity: 1;
+    z-index: 11;
+}
+
+div.card:nth-child(3)>div:nth-child(1) {
+    background: url('images/Teenage-plant.JPG') no-repeat -2vw -5vw;
+    background-size: cover;
+    width: 11vw;
+}
+
+div.card:nth-child(3)>div:nth-child(1)>img:nth-child(1) {
+    width: 5.7vw;
+    top: -0.9vw;
+    left: -1.1vw;
+    z-index: 11;
+}
+
+div.card:nth-child(4)>div:nth-child(1) {
+    background: url('images/Daddy-plant.JPG') no-repeat 0vw -6vw;
+    background-size: cover;
+    width: 100%;
+}
+
+div.card:nth-child(4)>div:nth-child(1)>img:nth-child(1) {
+    width: 9vw;
+    top: -5.6vw;
+    left: -0.2vw;
+    z-index: 11;
+}
+
+div.card:nth-child(5)>div:nth-child(1) {
+    background: url('images/Giant-plant.JPG') no-repeat 0vw -5vw;
+    background-size: cover;
+    width: 100%;
+}
+
+div.card:nth-child(5)>div:nth-child(1)>img:nth-child(1) {
+    width: 7.5vw;
+    top: -3.8vw;
+    left: 0.2vw;
+    z-index: 11;
+}
+
+div.card:nth-child(6)>div:nth-child(1) {
+    background: url('images/Monster-plant.JPG') no-repeat 0vw -4vw;
+    background-size: cover;
+    width: 100%;
+}
+
+div.card:nth-child(6)>div:nth-child(1)>img:nth-child(1) {
+    width: 7.8vw;
+    top: -3.8vw;
+    left: 0.4vw;
+    z-index: 11;
+}
+
+.container {
+    padding: 0.5vw;
+}
+
+.overlay-container {
+    position: relative;
+    width: 100%;
+}
+
+.background-img,
+.overlay-img {
+    width: 100%;
+    display: block;
+}
+
+
+.card .container {
+    display: flex;
+    padding: 0.2vw 0.16vw;
+    font-size: 0.5vw;
+    justify-content: space-between;
+    background-color: #7db197;
+    z-index: 10;
+    position: sticky;
+    color: white;
+}
+
+.card .container h4,
+p {
+    font-size: 0.6vw;
+    margin: 0;
+}
+
+.card .container input {
+    font-size: 0.7vw;
+    width: 3vw;
+    border: none;
+    border-radius: 10px;
+}
+
+.pots {
+    width: 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pot {
+    padding: 0.3vw 0.5vw;
+}
+
+.pots_select {
+    display: flex;
+    flex-direction: column;
+}
+
+.pots_img {
+    margin-top: 1vw;
+}
+
+.pots .couleurs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pots .couleurs span {
+    height: 1vw;
+    width: 2vw;
+    border-radius: 0.3vw;
+    margin: 0.5vw;
+}
+
+.couleurs .beige {
+    background-color: #bb9288;
+}
+
+.couleurs .bleu {
+    background-color: #094959;
+}
+
+.couleurs .jaune {
+    background-color: #c0a06a;
+}
+
+.couleurs .blanc {
+    background-color: #fff;
+    border: solid 0.1rem #264653;
+}
+
+.couleurs .vert {
+    background-color: #aebeb1;
+}
+
+.blocPaiement {
+    width: 56%;
+    display: flex;
+    justify-content: center;
+}
+
+.blocPaiement button {
+    margin: 0 0.3rem;
+    font-size: 0.5vw;
+    font-weight: 900;
+    color: #264653;
+    background-color: #b3d8b500;
+    padding: 0.2rem 0.5rem;
+    border: solid 0.1rem #264653;
+    box-shadow: none;
+    border-radius: 50rem;
+    transition: 1052ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.paiementTitre button {
+    border: none;
+    font-size: 0.6vw;
+    background-color: #7db197;
+    padding: 0.5vw 0.8vw;
+}
+
+.paiementTitre {
+    border-bottom: 0.1rem solid #00000021;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+}
+
+.blocPrix {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blocPrix_entretien {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.blocPrix h4 {
+    font-size: 1vw;
+}
+
+.blocPrix_entretien p,
+.blocPrix_entretien span {
+    font-size: 0.6vw;
+    font-weight: 500;
+}
+
+
+.blocPrix button {
+    font-size: 0.8vw;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: rgb(247, 179, 43);
+    padding: 0.2vw 1vw;
+    border: none;
+    box-shadow: none;
+    border-radius: 50rem;
+    transition: 1052ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.murVegeInfos {
+    background: url('images/balcon.png') no-repeat 0vw 0vw;
+    margin-top: 1.2vw;
+    background-size: cover;
+    width: 98%;
+    border-radius: 7vw;
+}
+
+.murVegeInfos--Blur {
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.gallerieVegeMur {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.6vw 0vw;
+}
+
+.gallerieVegeMur .card--mur {
+    width: 8.7vw;
+    margin: 0vw;
+    border-radius: 5vw 5vw 2vw 2vw;
+    background-color: #26362e38;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: #0000;
+    border-width: 0.4vw;
+    border-style: solid;
+}
+
+
+.card--mur .card--mur__divs-img {
+    height: 23vw;
+    width: 100%;
+    border-radius: 5vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.card--mur__cover img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card--mur .container {
+    display: flex;
+    font-size: 0.6vw;
+    justify-content: space-between;
+    color: white;
+}
+
+.card--mur .container h4 {
+    margin: 0;
+}
+
+
+
+#paiementTitreMur {
+    border-bottom: 0.1rem solid #fff;
+}
+
+#paiementTitreMur button {
+    background-color: #f8f8f8;
+}
+
+#blocPrixMur {
+    border-radius: 5vw;
+    margin-bottom: 1vw;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
+    background-color: #26362e38;
+    color: white;
+}

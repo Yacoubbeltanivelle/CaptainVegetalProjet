@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Captain Vegetal - Green simulateur</title>
+
+    <link rel="stylesheet" crossorigin href="/index.css">
+</head>
+
+<body>
+
+    <!--header menu -->
+    <header class="menu">
+        <img src="logo.png" alt="logo Booki">
+
+        <h1>Mon projet de plantes d'intérieur</h1>
+
+        <div class="sc-egTsrv NnVoe">
+            <div class="sc-iCKXBC eygjmR">Une demande<br>particulière ?</div>
+            <svg viewBox="0 0 138 49" xmlns="http://www.w3.org/2000/svg" class="sc-iVheDh kbLKWT">
+                <g>
+                    <path
+                        d="M81.7834 25.1002C82.3645 31.4523 80.1626 36.9246 75.5182 41.3674C68.2924 48.2803 57.1145 48.4994 50.1837 41.9446C46.6911 38.6342 44.7107 34.4649 44.4768 29.4913C44.134 22.0066 48.0307 16.4391 53.2696 11.1271C51.3831 10.8344 49.5471 10.8942 47.722 10.995C32.6244 11.8027 19.662 18.151 8.17181 28.3288C5.90016 30.3427 3.70032 30.4926 2.19761 28.7355C0.694909 26.9785 1.09336 24.7489 3.35404 22.6941C8.79959 17.744 14.7465 13.5453 21.309 10.3604C34.5819 3.91432 48.1793 1.08538 62.3236 5.02759C63.0025 5.2118 63.871 5.14756 64.5544 4.88401C73.5707 1.34939 82.5234 1.40407 91.4142 4.12525C101.708 7.27583 110.471 13.0179 118.159 20.4023C121.453 23.5754 124.303 27.219 127.345 30.6501C127.682 30.4867 128.022 30.3369 128.359 30.1735C128.514 26.6256 128.616 23.0699 128.825 19.5296C129.009 16.3105 130.519 14.5958 132.941 14.7012C135.274 14.8012 136.495 16.5458 136.298 19.6073C135.878 26.1322 135.449 32.6743 134.985 39.1965C134.733 42.7924 133.398 43.9845 129.813 43.9122C124.6 43.8002 119.38 43.661 114.169 43.5267C112.532 43.482 110.875 43.5525 109.277 43.2996C107.231 42.9838 106.21 41.5515 106.364 39.4461C106.51 37.4522 107.693 36.1838 109.648 35.8579C110.567 35.7071 111.512 35.7908 112.447 35.8112C115.575 35.8739 118.71 35.9639 122.356 36.0489C120.166 33.5829 118.445 31.5036 116.585 29.5862C108.766 21.5488 100.009 14.8975 89.1064 11.5804C84.0603 10.0403 78.8934 9.389 73.0589 10.4538C77.8644 14.4301 81.2412 18.9208 81.7971 25.0966L81.7834 25.1002ZM54.1124 34.802C57.92 39.7263 65.0027 40.4794 69.9032 36.4732C75.1199 32.1993 75.8992 25.3511 71.749 19.9402C71.1423 19.1511 70.4874 18.3456 69.7024 17.7652C62.7959 12.6679 64.0145 12.8174 56.9753 18.2675C51.4183 23.4304 50.3097 29.869 54.121 34.807L54.1124 34.802Z"
+                        fill="current">
+                    </path>
+                </g>
+            </svg>
+            <a href="tel:0615292925" target="_blank" rel="noopener noreferrer" class="sc-bZHSRq kjubOL">06 15 29 29
+                25</a>
+        </div>
+    </header>
+
+    <!--Chargement de page -->
+    <div class="chargement">
+        <div class="chargement__cercle"></div>
+    </div>
+
+    <!--Contenus principal-->
+    <main>
+        <div class="divs_main">
+            <h2>JE VEUX DES PLANTES</h2>
+
+            <div class="divs_main--ville">
+                <select id="departements" name="departements">
+                    <option value="00">Choisissez un département :</option>
+                    <option value="01">01 - Ain</option>
+                    <option value="02">02 - Aisne</option>
+                    <option value="03">03 - Allier</option>
+                    <option value="04">04 - Alpes-de-Haute-Provence</option>
+                    <option value="05">05 - Hautes-Alpes</option>
+                    <option value="06">06 - Alpes-Maritimes</option>
+                    <option value="07">07 - Ardèche</option>
+                    <option value="08">08 - Ardennes</option>
+                    <option value="09">09 - Ariège</option>
+                    <option value="10">10 - Aube</option>
+                    <option value="11">11 - Aude</option>
+                    <option value="12">12 - Aveyron</option>
+                    <option value="13">13 - Bouches-du-Rhône</option>
+                    <option value="14">14 - Calvados</option>
+                    <option value="15">15 - Cantal</option>
+                    <option value="16">16 - Charente</option>
+                    <option value="17">17 - Charente-Maritime</option>
+                    <option value="18">18 - Cher</option>
+                    <option value="19">19 - Corrèze</option>
+                    <option value="21">21 - Côte-d'Or</option>
+                    <option value="22">22 - Côtes-d'Armor</option>
+                    <option value="23">23 - Creuse</option>
+                    <option value="24">24 - Dordogne</option>
+                    <option value="25">25 - Doubs</option>
+                    <option value="26">26 - Drôme</option>
+                    <option value="27">27 - Eure</option>
+                    <option value="28">28 - Eure-et-Loir</option>
+                    <option value="29">29 - Finistère</option>
+                    <option value="30">30 - Gard</option>
+                    <option value="31">31 - Haute-Garonne</option>
+                    <option value="32">32 - Gers</option>
+                    <option value="33">33 - Gironde</option>
+                    <option value="34">34 - Hérault</option>
+                    <option value="35">35 - Ille-et-Vilaine</option>
+                    <option value="36">36 - Indre</option>
+                    <option value="37">37 - Indre-et-Loire</option>
+                    <option value="38">38 - Isère</option>
+                    <option value="39">39 - Jura</option>
+                    <option value="40">40 - Landes</option>
+                    <option value="41">41 - Loir-et-Cher</option>
+                    <option value="42">42 - Loire</option>
+                    <option value="43">43 - Haute-Loire</option>
+                    <option value="44">44 - Loire-Atlantique</option>
+                    <option value="45">45 - Loiret</option>
+                    <option value="46">46 - Lot</option>
+                    <option value="47">47 - Lot-et-Garonne</option>
+                    <option value="48">48 - Lozère</option>
+                    <option value="49">49 - Maine-et-Loire</option>
+                    <option value="50">50 - Manche</option>
+                    <option value="51">51 - Marne</option>
+                    <option value="52">52 - Haute-Marne</option>
+                    <option value="53">53 - Mayenne</option>
+                    <option value="54">54 - Meurthe-et-Moselle</option>
+                    <option value="55">55 - Meuse</option>
+                    <option value="56">56 - Morbihan</option>
+                    <option value="57">57 - Moselle</option>
+                    <option value="58">58 - Nièvre</option>
+                    <option value="59">59 - Nord</option>
+                    <option value="60">60 - Oise</option>
+                    <option value="61">61 - Orne</option>
+                    <option value="62">62 - Pas-de-Calais</option>
+                    <option value="63">63 - Puy-de-Dôme</option>
+                    <option value="64">64 - Pyrénées-Atlantiques</option>
+                    <option value="65">65 - Hautes-Pyrénées</option>
+                    <option value="66">66 - Pyrénées-Orientales</option>
+                    <option value="67">67 - Bas-Rhin</option>
+                    <option value="68">68 - Haut-Rhin</option>
+                    <option value="69">69 - Rhône</option>
+                    <option value="70">70 - Haute-Saône</option>
+                    <option value="71">71 - Saône-et-Loire</option>
+                    <option value="72">72 - Sarthe</option>
+                    <option value="73">73 - Savoie</option>
+                    <option value="74">74 - Haute-Savoie</option>
+                    <option value="75">75 - Paris</option>
+                    <option value="76">76 - Seine-Maritime</option>
+                    <option value="77">77 - Seine-et-Marne</option>
+                    <option value="78">78 - Yvelines</option>
+                    <option value="79">79 - Deux-Sèvres</option>
+                    <option value="80">80 - Somme</option>
+                    <option value="81">81 - Tarn</option>
+                    <option value="82">82 - Tarn-et-Garonne</option>
+                    <option value="83">83 - Var</option>
+                    <option value="84">84 - Vaucluse</option>
+                    <option value="85">85 - Vendée</option>
+                    <option value="86">86 - Vienne</option>
+                    <option value="87">87 - Haute-Vienne</option>
+                    <option value="88">88 - Vosges</option>
+                    <option value="89">89 - Yonne</option>
+                    <option value="90">90 - Territoire de Belfort</option>
+                    <option value="91">91 - Essonne</option>
+                    <option value="92">92 - Hauts-de-Seine</option>
+                    <option value="93">93 - Seine-Saint-Denis</option>
+                    <option value="94">94 - Val-de-Marne</option>
+                    <option value="95">95 - Val-d'Oise</option>
+                    <option value="971">971 - Guadeloupe</option>
+                    <option value="972">972 - Martinique</option>
+                    <option value="973">973 - Guyane</option>
+                    <option value="974">974 - La Réunion</option>
+                    <option value="976">976 - Mayotte</option>
+                </select>
+
+
+                <div class="select_arrow">
+                </div>
+            </div>
+
+            <div>
+
+                <div class="plantes_infos">
+
+
+                    <div class="galerie">
+
+                        <div class="card">
+                            <div class="card__divs-img card__cover">
+                                <img src="images/Baby-plant2.PNG" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4><b>Baby plant</b></h4>
+                                    <p>+25 cm</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__divs-img card__cover">
+                                <img src="images/Plante-tombante2.PNG" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4><b>Plante tombante</b></h4>
+                                    <p>+50 cm</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__divs-img card__cover">
+                                <img src="images/Teenage-plant2.PNG" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4><b>Teenage plant</b></h4>
+                                    <p>+40 cm</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card bas">
+                            <div class="card__divs-img card__cover">
+                                <img src="images/Daddy-plant2.PNG" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4><b>Daddy plant</b></h4>
+                                    <p>+100 cm</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card bas">
+                            <div class="card__divs-img card__cover">
+                                <img src="images/Giant-plant2.PNG" alt="Overlay Image">
+                            </div>
+
+                            <div class="container">
+                                <div>
+                                    <h4><b>Giant plant</b></h4>
+                                    <p>+150 cm</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card bas">
+                            <div class="card__divs-img card__cover">
+                                <img src="images/Monster-plant2.PNG" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4><b>Monster plant</b></h4>
+                                    <p>+200 cm</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pots">
+                        <div class="pots_select">
+                            <select name="pot" id="pot">
+                                <option value="terre-cuite-classique">Terre cuite classique</option>
+                                <option value="terre-cuite-patchwork">Terre cuite patchwork</option>
+                                <option value="ecopot">Ecopot</option>
+                                <option value="pot-pastel">Pot Pastel</option>
+                            </select>
+                        </div>
+
+                        <div class="card__divs-img card__cover pots_img">
+                            <img src="images/pots.png" alt="Avatar" style="width:100%">
+                        </div>
+
+                        <div class="couleurs">
+                            <span class="beige">
+                            </span>
+
+                            <span class=" bleu">
+                            </span>
+
+                            <span class="jaune">
+                            </span>
+
+                            <span class="blanc">
+                            </span>
+
+                            <span class="vert">
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="blocPaiement paiementTitre">
+                <button> Location</button>
+                <button> Achat</button>
+                <button> Paiement 36x</button>
+            </div>
+
+            <div class="blocPaiement">
+                <button> 12 mois</button>
+                <button> 24 mois</button>
+                <button> 36 mois</button>
+            </div>
+
+            <div class="blocPrix">
+                <div class="blocPrix_entretien">
+                    <p>Avec entretien</p>
+                    <span> 122€/ mois</span>
+                </div>
+
+                <h4> 220€ HT / mois</h4>
+
+                <button>Devis</button>
+            </div>
+
+        </div>
+        <div class="divs_main">
+            <h2>JE VEUX DE L'ART VÉGÉTAL</h2>
+
+            <div>
+                <select id="departements" name="departements">
+                    <option value="00">Choisissez un département :</option>
+                    <option value="01">01 - Ain</option>
+                    <option value="02">02 - Aisne</option>
+                    <option value="03">03 - Allier</option>
+                    <option value="04">04 - Alpes-de-Haute-Provence</option>
+                    <option value="05">05 - Hautes-Alpes</option>
+                    <option value="06">06 - Alpes-Maritimes</option>
+                    <option value="07">07 - Ardèche</option>
+                    <option value="08">08 - Ardennes</option>
+                    <option value="09">09 - Ariège</option>
+                    <option value="10">10 - Aube</option>
+                    <option value="11">11 - Aude</option>
+                    <option value="12">12 - Aveyron</option>
+                    <option value="13">13 - Bouches-du-Rhône</option>
+                    <option value="14">14 - Calvados</option>
+                    <option value="15">15 - Cantal</option>
+                    <option value="16">16 - Charente</option>
+                    <option value="17">17 - Charente-Maritime</option>
+                    <option value="18">18 - Cher</option>
+                    <option value="19">19 - Corrèze</option>
+                    <option value="21">21 - Côte-d'Or</option>
+                    <option value="22">22 - Côtes-d'Armor</option>
+                    <option value="23">23 - Creuse</option>
+                    <option value="24">24 - Dordogne</option>
+                    <option value="25">25 - Doubs</option>
+                    <option value="26">26 - Drôme</option>
+                    <option value="27">27 - Eure</option>
+                    <option value="28">28 - Eure-et-Loir</option>
+                    <option value="29">29 - Finistère</option>
+                    <option value="30">30 - Gard</option>
+                    <option value="31">31 - Haute-Garonne</option>
+                    <option value="32">32 - Gers</option>
+                    <option value="33">33 - Gironde</option>
+                    <option value="34">34 - Hérault</option>
+                    <option value="35">35 - Ille-et-Vilaine</option>
+                    <option value="36">36 - Indre</option>
+                    <option value="37">37 - Indre-et-Loire</option>
+                    <option value="38">38 - Isère</option>
+                    <option value="39">39 - Jura</option>
+                    <option value="40">40 - Landes</option>
+                    <option value="41">41 - Loir-et-Cher</option>
+                    <option value="42">42 - Loire</option>
+                    <option value="43">43 - Haute-Loire</option>
+                    <option value="44">44 - Loire-Atlantique</option>
+                    <option value="45">45 - Loiret</option>
+                    <option value="46">46 - Lot</option>
+                    <option value="47">47 - Lot-et-Garonne</option>
+                    <option value="48">48 - Lozère</option>
+                    <option value="49">49 - Maine-et-Loire</option>
+                    <option value="50">50 - Manche</option>
+                    <option value="51">51 - Marne</option>
+                    <option value="52">52 - Haute-Marne</option>
+                    <option value="53">53 - Mayenne</option>
+                    <option value="54">54 - Meurthe-et-Moselle</option>
+                    <option value="55">55 - Meuse</option>
+                    <option value="56">56 - Morbihan</option>
+                    <option value="57">57 - Moselle</option>
+                    <option value="58">58 - Nièvre</option>
+                    <option value="59">59 - Nord</option>
+                    <option value="60">60 - Oise</option>
+                    <option value="61">61 - Orne</option>
+                    <option value="62">62 - Pas-de-Calais</option>
+                    <option value="63">63 - Puy-de-Dôme</option>
+                    <option value="64">64 - Pyrénées-Atlantiques</option>
+                    <option value="65">65 - Hautes-Pyrénées</option>
+                    <option value="66">66 - Pyrénées-Orientales</option>
+                    <option value="67">67 - Bas-Rhin</option>
+                    <option value="68">68 - Haut-Rhin</option>
+                    <option value="69">69 - Rhône</option>
+                    <option value="70">70 - Haute-Saône</option>
+                    <option value="71">71 - Saône-et-Loire</option>
+                    <option value="72">72 - Sarthe</option>
+                    <option value="73">73 - Savoie</option>
+                    <option value="74">74 - Haute-Savoie</option>
+                    <option value="75">75 - Paris</option>
+                    <option value="76">76 - Seine-Maritime</option>
+                    <option value="77">77 - Seine-et-Marne</option>
+                    <option value="78">78 - Yvelines</option>
+                    <option value="79">79 - Deux-Sèvres</option>
+                    <option value="80">80 - Somme</option>
+                    <option value="81">81 - Tarn</option>
+                    <option value="82">82 - Tarn-et-Garonne</option>
+                    <option value="83">83 - Var</option>
+                    <option value="84">84 - Vaucluse</option>
+                    <option value="85">85 - Vendée</option>
+                    <option value="86">86 - Vienne</option>
+                    <option value="87">87 - Haute-Vienne</option>
+                    <option value="88">88 - Vosges</option>
+                    <option value="89">89 - Yonne</option>
+                    <option value="90">90 - Territoire de Belfort</option>
+                    <option value="91">91 - Essonne</option>
+                    <option value="92">92 - Hauts-de-Seine</option>
+                    <option value="93">93 - Seine-Saint-Denis</option>
+                    <option value="94">94 - Val-de-Marne</option>
+                    <option value="95">95 - Val-d'Oise</option>
+                    <option value="971">971 - Guadeloupe</option>
+                    <option value="972">972 - Martinique</option>
+                    <option value="973">973 - Guyane</option>
+                    <option value="974">974 - La Réunion</option>
+                    <option value="976">976 - Mayotte</option>
+                </select>
+            </div>
+
+            <div class="murVegeInfos">
+                <div class="murVegeInfos--Blur">
+                    <div class="gallerieVegeMur">
+
+                        <div class="card--mur">
+                            <div class="card--mur__divs-img card--mur__cover">
+                                <img src="images/Mur/Mur-vegetal-stabilise.jpg" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4>Mur végétal stabilisé</h4>
+                                    <p>au m²</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card--mur">
+                            <div class="card--mur__divs-img card--mur__cover">
+                                <img src="images/Mur/Mur-vegetal-artificiel.jpg" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4>Mur végétal artificiel</h4>
+                                    <p>au m²</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card--mur">
+                            <div class="card--mur__divs-img card--mur__cover">
+                                <img src="images/Mur/Mur-vegetal-vivant.jpg" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4>Mur végétal vivant</h4>
+                                    <p>au m²</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card--mur">
+                            <div class="card--mur__divs-img card--mur__cover">
+                                <img src="images/Mur/Liane-vegetale-stabilisee.jpg" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4>Liane végétale stabilisée</h4>
+                                    <p>au m²</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input">
+
+                            </div>
+                        </div>
+
+                        <div class="card--mur">
+                            <div class="card--mur__divs-img card--mur__cover">
+                                <img src="images/Mur/Liane-vegetale-artificielle.jpg" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <div>
+                                    <h4>Liane végétale artificielle</h4>
+                                    <p>au m²</p>
+                                </div>
+                                <input type="number" name="products[0].quantity" placeholder="0" min="0" step="1"
+                                    class="sc-qZrbh lgKyWa form-input custom-spinner">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="blocPaiement paiementTitre" id="paiementTitreMur">
+                        <button> Achat</button>
+                    </div>
+
+                    <div class="blocPrix" id="blocPrixMur">
+                        <h4> 220€ HT / mois</h4>
+                        <button>Devis</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
